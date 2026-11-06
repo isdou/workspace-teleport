@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "workspace-teleport"
+version = "0.1.0"
+description = "AI Agent-Native Workspace & Project Relocation Engine (Codex, Claude Code, Antigravity, Git Worktrees)"
+readme = "README.md"
+authors = [
+    { name = "isdou" }
+]
+license = { text = "MIT" }
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: MacOS",
+    "Topic :: Software Development :: Build Tools",
+]
+requires-python = ">=3.8"
+dependencies = []
+
+[project.scripts]
+workspace-teleport = "workspace_teleport.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/isdou/workspace-teleport"
+Repository = "https://github.com/isdou/workspace-teleport"
